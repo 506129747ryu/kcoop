@@ -14,9 +14,9 @@ const Acordion = (props) => {
     }
 
     return (
-        <div class="w-1/2 border-green-500 border-4 p-4 rounded-xl text-green-500 text-sm">
+        <div class="w-[960px] border-green-600 border-4 p-4 rounded-xl text-green-600">
             <div class="flex justify-center">{props.notice}</div>
-            <div class="flex justify-end"><button onClick={handleClick} class="border-b-2 border-green-500 font-bold">詳しく見る{icon}</button></div>
+            <div class="flex justify-end"><button onClick={handleClick} class="border-b-2 border-green-600 font-bold">詳しく見る{icon}</button></div>
             { isOpen && (<div class="flex justify-center p-5">{props.contents}</div>)}
         </div>
     )
