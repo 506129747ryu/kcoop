@@ -5,6 +5,7 @@ import ResearchBox from "./components/ResearchBox"
 import DropDown from "./components/DropDown"
 import ResearchButton from "./components/button/ResearchButton"
 import DesideButton from "./components/button/DesideButton"
+import Image from 'next/image'
 
 const AcordionContents = () => {
   return (
@@ -49,6 +50,9 @@ const Home = () => {
   return (
     <div>
       <Header />
+      <div class="flex justify-center m-5">
+        <Image src="/top_banner/logo.png" width={257} height={71} />
+      </div>
       <h1 class="text-3xl flex justify-center m-5">お見積もり・申込手続きページ</h1>
       <div class="flex justify-center">
         <Acordion notice="既に当会に加入されている方（組合員）はマイページでのお手続きが便利です！" contents={<AcordionContents />}/>

@@ -10,9 +10,9 @@ const ResearchBox = (props) => {
                     <div class="text-sm">{props.description}</div>
                 </div>
                 <div class="bg-gray-200 p-1 rounded-b-lg text-sm">
-                    <div class="my-5 mx-5 p-3 bg-white rounded">
+                    <div class="my-5 mx-5 p-5 bg-white rounded">
                         <p>{props.research}</p>
-                        <div class="bg-lime-200 p-3">{props.contents}</div>
+                        <div class="bg-lime-200 m-3 p-3">{props.contents}</div>
                     </div>
                 </div>
             </div>
