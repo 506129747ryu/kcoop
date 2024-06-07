@@ -52,7 +52,9 @@ const Home = () => {
   const [memberCount, setMemberCount] = useState(1)
 
   const addButtonClicked = () => {
-    setMemberCount(memberCount + 1)
+    if(memberCount < 3){
+      setMemberCount(memberCount + 1)
+    }
   }
 
   return (
