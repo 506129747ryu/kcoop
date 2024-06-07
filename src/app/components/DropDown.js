@@ -8,7 +8,7 @@ const DropDown = (props) => {
     }
     return (
         <div>
-            <select class="p-1 rounded">
+            <select class={"p-1 rounded shadow " + props.class}>
                 {list}
             </select>
         </div>
