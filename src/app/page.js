@@ -66,13 +66,20 @@ const Home = () => {
         <Acordion notice="既に当会に加入されている方（組合員）はマイページでのお手続きが便利です！" contents={<AcordionContents />}/>
       </div>
       <div class ="flex justify-center">
-      <ResearchBox
-        tittle="お見積もりを始める"
-        topic="人目（保障の対象となられる方"
-        description="※最大3名までお見積りできます。次画面で追加できます。"
-        research="保障の対象となられる方の生年月日・性別を入力してください。"
-        contents={<ResearchContent1 />}
-      />
+        <AddComponent
+          component={
+            <ResearchBox
+            topic={[memberCount,"人目（保障の対象となられる方"]}
+            description="※最大3名までお見積りできます。次画面で追加できます。"
+            research="保障の対象となられる方の生年月日・性別を入力してください。"
+            contents={<ResearchContent1 />}
+            />
+          }
+          count={memberCount}
+          handleClick={addButtonClicked}/>
+      </div>
+      <div class ="flex justify-center">
+      
       </div>
       <div class ="flex justify-center">
       <ResearchBox
@@ -82,7 +89,6 @@ const Home = () => {
       />
       
       </div>
-      <div class ="flex justify-center"><AddComponent component={<ResearchBox />} count={memberCount} handleClick={addButtonClicked}/></div>
       <div class="flex justify-center m-5">
         <DesideButton text="お見積り →"/>
       </div>

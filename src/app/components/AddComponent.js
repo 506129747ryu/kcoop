@@ -13,7 +13,9 @@ const AddComponent = (props) => {
     return (
         <div>
             {list}
-            <button onClick={props.handleClick} class="border">追加する</button>
+            <div class="flex justify-end">
+                <button onClick={props.handleClick} class="border">追加する</button>
+            </div>
         </div>
     )
 }
